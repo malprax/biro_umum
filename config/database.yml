@@ -1,9 +1,7 @@
- defaults: &defaults
-
-
+defaults: &defaults
 
 development:
-  database: biro_umum_development
+  database: biro_development
   username: postgres
   password:
   host: localhost
@@ -13,7 +11,6 @@ development:
   pool: 5
 
   # <<: *defaults
-
 production:
 # development:
 #   database: dc57tjbnmppg78
@@ -24,7 +21,7 @@ production:
 #   <<: *defaults
 
 test:
-  database: biro_umum_test
+  database: biro_test
   <<: *defaults
 
 # production:
